@@ -1,0 +1,23 @@
+<html>
+    <body>
+    <script>
+        var eng, kor, math, sci;
+        eng = parseInt(prompt("영어 점수를 입력하세요."));
+        kor = parseInt(prompt("국어 점수를 입력하세요."));
+        math = parseInt(prompt("수학 점수를 입력하세요."));
+        sci = parseInt(prompt("과학 점수를 입력하세요."));
+        if(eng +kor > math + sci)
+        {
+            document.write("문과 과목을 잘합니다.");
+        }
+        else if(eng + kor == math + sci)
+        {
+            document.write("비슷합니다.");
+        }
+        else if(eng +kor < math + sci)
+        {
+            document.write("이과 과목을 잘 합니다.");
+        }
+    </script>    
+    </body>
+</html>

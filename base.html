@@ -1,0 +1,41 @@
+<html>
+    <body>
+    <script>
+        var weight, height, sex, base;
+        weight = parseInt(prompt("몸무게 입력"));
+        height = prompt("키 입력");
+        sex = prompt("성별 입력(남자 또는 여자)");
+        document.write("몸무게 : " + weight + " 키 : " + height + " 성별 : " + sex + "<br>");
+        if(sex =="남자")
+        {
+            base = height-100;
+            if(base < weight - 5)
+            {
+                document.write("당신은 비만입니다");
+            } else if(base > weight + 5)
+            {
+                document.write("당신은 약체입니다");
+            }
+            else
+            {
+                document.write("당신은 표준입니다");
+            }
+        }
+        else
+        {
+            base = height - 105;
+            if(base < weight - 5)
+            {
+                document.write("당신은 비만입니다");
+            } else if (base > weight + 5)
+            {
+                document.write("당신은 약체입니다");
+            }
+            else
+            {
+                document.write("당신은 표준입니다");
+            }
+        }
+    </script>    
+    </body>
+</html>
