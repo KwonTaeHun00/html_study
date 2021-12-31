@@ -1,0 +1,21 @@
+<!--#html_submission 8-1-->
+<html>
+    <body>
+        <script>
+            var first, second, third, fourth, ave;
+            first = parseInt(prompt("1학년 학점을 입력하세요."));
+            second = parseInt(prompt("2학년 학점을 입력하세요."));
+            third = parseInt(prompt("3학년 학점을 입력하세요."));
+            fourth = parseInt(prompt("4학년 학점을 입력하세요."));
+            ave = (first + second + third + fourth) / 4;
+            if ((first >= 4)&&(second >=4)&&(third>=4)&&(fourth>=4))
+            {
+                document.write("평균 학점은 "+ave+"점으로 4년 우등생입니다.<br>");
+            }
+            else
+            {
+                document.write("평균 학점은 " + ave + "점입니다. <br>");
+            }
+        </script>
+    </body>
+</html>
