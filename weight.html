@@ -1,0 +1,23 @@
+<!--html submission 8-3-->
+<html>
+    <body>
+        <script>
+            var weight, height, result;
+            weight = parseInt(prompt("몸무게를 입력하세요."));
+            height = parseInt(prompt("키를 입력하세요."));
+            result = height - weight;
+            if (result < 100)
+            {
+                document.write("비만 체중입니다.");
+            }
+            else if((result >= 100) && (result <= 110))
+            {
+                document.write("평균 체중입니다.");
+            }
+            else if (result > 110)
+            {
+                document.write("허약 체중입니다.");
+            }
+        </script>
+    </body>
+</html>
