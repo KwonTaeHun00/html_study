@@ -1,0 +1,29 @@
+<!--html submission Chapter 8-4-->
+<html>
+    <body>
+        <script>
+            var position, salary, amount, tax;
+            position = prompt("직급을 입력하세요.");
+            salary = prompt("월급을 입력하세요.");
+           
+            if (position==5 || position==6)
+            {
+                tax = 0.12;
+                amount = salary-(salary * tax);
+
+                document.write("직급 : " + position + "급<br>");
+                document.write("본봉 : " + salary + "원<br>");
+                document.write("실수령액 (세금 12% 적용) : " + amount +"원");
+            }
+            if (position == 7 || position == 8)
+            {
+                tax = 0.08;
+                amount = salary - (salary * tax);
+
+                document.write("직급 : " + position + "급<br>");
+                document.write("본봉 : " + salary + "원<br>");
+                document.write("실수령액 (세금 8% 적용) : " + amount +"원");
+            }
+        </script>
+    </body>
+</html>
