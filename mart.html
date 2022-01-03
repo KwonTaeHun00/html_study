@@ -1,0 +1,22 @@
+<!-- html submission Chapter 8-5 -->
+<html>
+    <body>
+        <script>
+            var price, time, actual;
+            price = prompt("물건 값을 입력하세요.");
+            time = prompt("물건 구입 시간을 입력하세요.");
+            if(time < 12 && time > 0)
+            {
+                actual = price-(price*0.05)
+                document.write("구입 시간 : " + time + "시<br>");
+                document.write("총 구입 금액 :" + price + "원<br>");
+                document.write("실제 지불 금액 : " + actual + "원");
+            }
+            else if(time >= 12 && time <= 24)
+            actual = price-(price*0.025)
+                document.write("구입 시간 : " + time + "시<br>");
+                document.write("총 구입 금액 :" + price + "원<br>");
+                document.write("실제 지불 금액 : " + actual + "원");
+        </script>
+    </body>
+</html>
