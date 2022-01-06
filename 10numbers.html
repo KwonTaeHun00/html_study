@@ -1,0 +1,25 @@
+<!-- Html Submission 9-2-3 -->
+<html>
+    <body>
+        <script>
+            var num=0, sum=0, count=1;
+            do
+            {
+                num = parseInt(prompt("숫자를 입력해주세요."));
+
+                if (num>0)
+                {
+                    sum = sum + num;
+                    document.write(count+"번째 숫자 : " + num +"<br>");
+                    count = count + 1;
+                }
+                else 
+                {
+                    document.write("입력한 숫자가 0보다 작습니다.<br>");
+                }
+            } while(count <= 10)
+            document.write("총 합 : " + sum + "<br>");
+            document.write("평균 : " + sum/10);
+        </script>
+    </body>
+</html>
