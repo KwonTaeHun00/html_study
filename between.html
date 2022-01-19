@@ -1,0 +1,25 @@
+<!--Html Example of practice 10-5 -->
+<html>
+    <body>
+        <script>
+            var num1, num2, temp, sum=0;
+            num1 = parseInt(prompt("숫자를 입력해주세요."));
+            num2 = parseInt(prompt("숫자를 입력해주세요."));
+            document.write("두 값은 " + num1 + "과 " + num2 + "입니다<br>");
+            if(num1 > num2)
+            {
+                temp = num1;
+                num1 = num2;
+                num2 = temp;
+            }
+            for ( ; num1 <= num2 ; num1 = num1 + 1)
+            {
+                if (num1 % 2 == 0)
+                {
+                    sum = sum + num1
+                }
+            }
+            document.write("두 값 사이의 짝수의 합은 " + sum + "입니다<br>");
+        </script>
+    </body>
+</html>
